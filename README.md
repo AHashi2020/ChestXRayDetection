@@ -1,1 +1,3 @@
 # ChestXRayDetection
+
+While medical image classifiers often achieve strong benchmark results, they are often vulnerable to domain shift, where performance of a model degrades when deployment data differs from a model’s training data. This project investigates the robustness of chest X-ray classification using the NIH ChestXray14 dataset, training both binary and multi-level DenseNet-121 classifiers and evaluated on VinDr-CXR for external testing across institutions. An entropy-gated test-time adaptation method updates this model during development using only low-uncertainty samples, with the goal of improving robustness and generalization in chest X-ray modeling. 
