@@ -1,0 +1,14 @@
+{
+  "entropy_threshold": 0.42936986684799194,
+  "entropy_quantile": 0.25,
+  "min_accepted_samples": 2,
+  "old_tta_learning_rate": 5e-06,
+  "new_tta_learning_rate": 5e-07,
+  "thresholds_by_label_after_overrides": {
+    "Airspace_Opacity": 0.5,
+    "Cardiomediastinal_Abnormality": 0.36,
+    "Pleural_Abnormality": 0.43,
+    "Focal_Lesion": 0.68,
+    "Chronic_Parenchymal_Change": 0.87
+  }
+}

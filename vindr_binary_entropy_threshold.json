@@ -1,0 +1,7 @@
+{
+  "entropy_threshold": 0.391116201877594,
+  "entropy_quantile": 0.25,
+  "tta_learning_rate": 1e-05,
+  "min_accepted_samples": 8,
+  "decision_threshold": 0.5
+}

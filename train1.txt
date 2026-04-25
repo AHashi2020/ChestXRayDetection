@@ -1,0 +1,531 @@
+(MLPython) Annmarie@MacBookPro cv_final_code % /usr/local/bin/python3 /Users/Annmarie/Desktop/cv_final_code/trainNIH.py
+Using device: mps
+Creating transforms...
+Transforms ready.
+Building datasets...
+Loading CSV: train.csv
+Loaded 89527 rows from train.csv
+Loading CSV: val.csv
+Loaded 22593 rows from val.csv
+Train dataset size: 89527
+Val dataset size: 22593
+Building dataloaders...
+Dataloaders ready.
+Train batches per epoch: 5596
+Val batches: 1413
+Building DenseNet-121...
+Model built. Final classifier replaced.
+Model moved to device.
+No checkpoint found. Starting fresh.
+Loss function ready.
+Freezing backbone...
+Backbone frozen.
+Head optimizer ready.
+Starting head epoch 1
+head epoch 1 - batch 100 / 5596 - avg loss: 0.6735 - elapsed: 27.9 sec
+head epoch 1 - batch 200 / 5596 - avg loss: 0.6621 - elapsed: 55.0 sec
+head epoch 1 - batch 300 / 5596 - avg loss: 0.6549 - elapsed: 82.1 sec
+head epoch 1 - batch 400 / 5596 - avg loss: 0.6527 - elapsed: 109.0 sec
+head epoch 1 - batch 500 / 5596 - avg loss: 0.6536 - elapsed: 135.9 sec
+head epoch 1 - batch 600 / 5596 - avg loss: 0.6544 - elapsed: 162.8 sec
+head epoch 1 - batch 700 / 5596 - avg loss: 0.6527 - elapsed: 189.7 sec
+head epoch 1 - batch 800 / 5596 - avg loss: 0.6507 - elapsed: 216.6 sec
+head epoch 1 - batch 900 / 5596 - avg loss: 0.6485 - elapsed: 243.5 sec
+head epoch 1 - batch 1000 / 5596 - avg loss: 0.6469 - elapsed: 270.6 sec
+head epoch 1 - batch 1100 / 5596 - avg loss: 0.646 - elapsed: 297.6 sec
+head epoch 1 - batch 1200 / 5596 - avg loss: 0.6451 - elapsed: 324.5 sec
+head epoch 1 - batch 1300 / 5596 - avg loss: 0.6437 - elapsed: 351.5 sec
+head epoch 1 - batch 1400 / 5596 - avg loss: 0.6426 - elapsed: 378.8 sec
+head epoch 1 - batch 1500 / 5596 - avg loss: 0.6427 - elapsed: 405.7 sec
+head epoch 1 - batch 1600 / 5596 - avg loss: 0.6427 - elapsed: 432.7 sec
+head epoch 1 - batch 1700 / 5596 - avg loss: 0.6424 - elapsed: 459.6 sec
+head epoch 1 - batch 1800 / 5596 - avg loss: 0.6424 - elapsed: 486.4 sec
+head epoch 1 - batch 1900 / 5596 - avg loss: 0.6412 - elapsed: 513.1 sec
+head epoch 1 - batch 2000 / 5596 - avg loss: 0.6422 - elapsed: 540.3 sec
+head epoch 1 - batch 2100 / 5596 - avg loss: 0.6418 - elapsed: 567.4 sec
+head epoch 1 - batch 2200 / 5596 - avg loss: 0.642 - elapsed: 594.3 sec
+head epoch 1 - batch 2300 / 5596 - avg loss: 0.6413 - elapsed: 621.4 sec
+head epoch 1 - batch 2400 / 5596 - avg loss: 0.6407 - elapsed: 648.5 sec
+head epoch 1 - batch 2500 / 5596 - avg loss: 0.6406 - elapsed: 675.4 sec
+head epoch 1 - batch 2600 / 5596 - avg loss: 0.6398 - elapsed: 702.5 sec
+head epoch 1 - batch 2700 / 5596 - avg loss: 0.6393 - elapsed: 729.6 sec
+head epoch 1 - batch 2800 / 5596 - avg loss: 0.6395 - elapsed: 756.6 sec
+head epoch 1 - batch 2900 / 5596 - avg loss: 0.6393 - elapsed: 784.2 sec
+head epoch 1 - batch 3000 / 5596 - avg loss: 0.6391 - elapsed: 811.1 sec
+head epoch 1 - batch 3100 / 5596 - avg loss: 0.6389 - elapsed: 837.8 sec
+head epoch 1 - batch 3200 / 5596 - avg loss: 0.6384 - elapsed: 864.9 sec
+head epoch 1 - batch 3300 / 5596 - avg loss: 0.6382 - elapsed: 892.7 sec
+head epoch 1 - batch 3400 / 5596 - avg loss: 0.6381 - elapsed: 919.7 sec
+head epoch 1 - batch 3500 / 5596 - avg loss: 0.6382 - elapsed: 946.6 sec
+head epoch 1 - batch 3600 / 5596 - avg loss: 0.6375 - elapsed: 973.5 sec
+head epoch 1 - batch 3700 / 5596 - avg loss: 0.6378 - elapsed: 1000.3 sec
+head epoch 1 - batch 3800 / 5596 - avg loss: 0.6377 - elapsed: 1027.1 sec
+head epoch 1 - batch 3900 / 5596 - avg loss: 0.637 - elapsed: 1054.1 sec
+head epoch 1 - batch 4000 / 5596 - avg loss: 0.6368 - elapsed: 1080.9 sec
+head epoch 1 - batch 4100 / 5596 - avg loss: 0.6363 - elapsed: 1107.8 sec
+head epoch 1 - batch 4200 / 5596 - avg loss: 0.6359 - elapsed: 1134.6 sec
+head epoch 1 - batch 4300 / 5596 - avg loss: 0.6356 - elapsed: 1161.5 sec
+head epoch 1 - batch 4400 / 5596 - avg loss: 0.636 - elapsed: 1188.4 sec
+head epoch 1 - batch 4500 / 5596 - avg loss: 0.6355 - elapsed: 1215.2 sec
+head epoch 1 - batch 4600 / 5596 - avg loss: 0.6354 - elapsed: 1242.0 sec
+head epoch 1 - batch 4700 / 5596 - avg loss: 0.6355 - elapsed: 1268.8 sec
+head epoch 1 - batch 4800 / 5596 - avg loss: 0.6355 - elapsed: 1295.7 sec
+head epoch 1 - batch 4900 / 5596 - avg loss: 0.6359 - elapsed: 1322.6 sec
+head epoch 1 - batch 5000 / 5596 - avg loss: 0.6356 - elapsed: 1349.5 sec
+head epoch 1 - batch 5100 / 5596 - avg loss: 0.6354 - elapsed: 1377.0 sec
+head epoch 1 - batch 5200 / 5596 - avg loss: 0.6353 - elapsed: 1404.9 sec
+head epoch 1 - batch 5300 / 5596 - avg loss: 0.6348 - elapsed: 1432.5 sec
+head epoch 1 - batch 5400 / 5596 - avg loss: 0.6345 - elapsed: 1459.8 sec
+head epoch 1 - batch 5500 / 5596 - avg loss: 0.6342 - elapsed: 1486.8 sec
+Finished head epoch 1 - final avg loss: 0.6342
+Starting evaluation for head epoch 1 ...
+head epoch 1 eval batch 100 / 1413
+head epoch 1 eval batch 200 / 1413
+head epoch 1 eval batch 300 / 1413
+head epoch 1 eval batch 400 / 1413
+head epoch 1 eval batch 500 / 1413
+head epoch 1 eval batch 600 / 1413
+head epoch 1 eval batch 700 / 1413
+head epoch 1 eval batch 800 / 1413
+head epoch 1 eval batch 900 / 1413
+head epoch 1 eval batch 1000 / 1413
+head epoch 1 eval batch 1100 / 1413
+head epoch 1 eval batch 1200 / 1413
+head epoch 1 eval batch 1300 / 1413
+head epoch 1 eval batch 1400 / 1413
+Finished evaluation for head epoch 1 - accuracy: 0.6321 - auroc: 0.7176
+head epoch: 1
+train loss: 0.6341765232077367
+val accuracy: 0.6321426990660824
+val auroc: 0.7175561004607275
+
+Saved history to training_outputs/history.csv
+Saved latest checkpoint to training_outputs/checkpoint_latest.pth
+Saved epoch model to training_outputs/epoch_models/head_epoch_1_auroc_0_7176.pth
+Saved best model to training_outputs/best_model.pth
+Saved latest checkpoint to training_outputs/checkpoint_latest.pth
+Starting head epoch 2
+head epoch 2 - batch 100 / 5596 - avg loss: 0.6318 - elapsed: 26.8 sec
+head epoch 2 - batch 200 / 5596 - avg loss: 0.6338 - elapsed: 53.7 sec
+head epoch 2 - batch 300 / 5596 - avg loss: 0.6323 - elapsed: 80.5 sec
+head epoch 2 - batch 400 / 5596 - avg loss: 0.6298 - elapsed: 107.2 sec
+head epoch 2 - batch 500 / 5596 - avg loss: 0.6294 - elapsed: 134.1 sec
+head epoch 2 - batch 600 / 5596 - avg loss: 0.6301 - elapsed: 160.8 sec
+head epoch 2 - batch 700 / 5596 - avg loss: 0.6303 - elapsed: 187.7 sec
+head epoch 2 - batch 800 / 5596 - avg loss: 0.63 - elapsed: 214.5 sec
+head epoch 2 - batch 900 / 5596 - avg loss: 0.6298 - elapsed: 241.2 sec
+head epoch 2 - batch 1000 / 5596 - avg loss: 0.6297 - elapsed: 268.0 sec
+head epoch 2 - batch 1100 / 5596 - avg loss: 0.6284 - elapsed: 294.8 sec
+head epoch 2 - batch 1200 / 5596 - avg loss: 0.6289 - elapsed: 321.6 sec
+head epoch 2 - batch 1300 / 5596 - avg loss: 0.6292 - elapsed: 348.5 sec
+head epoch 2 - batch 1400 / 5596 - avg loss: 0.628 - elapsed: 375.3 sec
+head epoch 2 - batch 1500 / 5596 - avg loss: 0.6283 - elapsed: 402.1 sec
+head epoch 2 - batch 1600 / 5596 - avg loss: 0.6283 - elapsed: 428.9 sec
+head epoch 2 - batch 1700 / 5596 - avg loss: 0.6287 - elapsed: 455.6 sec
+head epoch 2 - batch 1800 / 5596 - avg loss: 0.6288 - elapsed: 482.3 sec
+head epoch 2 - batch 1900 / 5596 - avg loss: 0.629 - elapsed: 509.0 sec
+head epoch 2 - batch 2000 / 5596 - avg loss: 0.6284 - elapsed: 535.8 sec
+head epoch 2 - batch 2100 / 5596 - avg loss: 0.6293 - elapsed: 562.5 sec
+head epoch 2 - batch 2200 / 5596 - avg loss: 0.6285 - elapsed: 589.2 sec
+head epoch 2 - batch 2300 / 5596 - avg loss: 0.6288 - elapsed: 615.9 sec
+head epoch 2 - batch 2400 / 5596 - avg loss: 0.629 - elapsed: 642.7 sec
+head epoch 2 - batch 2500 / 5596 - avg loss: 0.6292 - elapsed: 669.4 sec
+head epoch 2 - batch 2600 / 5596 - avg loss: 0.6295 - elapsed: 696.1 sec
+head epoch 2 - batch 2700 / 5596 - avg loss: 0.6289 - elapsed: 722.8 sec
+head epoch 2 - batch 2800 / 5596 - avg loss: 0.628 - elapsed: 749.6 sec
+head epoch 2 - batch 2900 / 5596 - avg loss: 0.6282 - elapsed: 776.3 sec
+head epoch 2 - batch 3000 / 5596 - avg loss: 0.6282 - elapsed: 803.1 sec
+head epoch 2 - batch 3100 / 5596 - avg loss: 0.6282 - elapsed: 829.8 sec
+head epoch 2 - batch 3200 / 5596 - avg loss: 0.629 - elapsed: 856.6 sec
+head epoch 2 - batch 3300 / 5596 - avg loss: 0.629 - elapsed: 883.3 sec
+head epoch 2 - batch 3400 / 5596 - avg loss: 0.6291 - elapsed: 910.0 sec
+head epoch 2 - batch 3500 / 5596 - avg loss: 0.629 - elapsed: 936.8 sec
+head epoch 2 - batch 3600 / 5596 - avg loss: 0.6287 - elapsed: 963.6 sec
+head epoch 2 - batch 3700 / 5596 - avg loss: 0.6284 - elapsed: 990.3 sec
+head epoch 2 - batch 3800 / 5596 - avg loss: 0.6284 - elapsed: 1017.0 sec
+head epoch 2 - batch 3900 / 5596 - avg loss: 0.6283 - elapsed: 1043.9 sec
+head epoch 2 - batch 4000 / 5596 - avg loss: 0.6285 - elapsed: 1070.6 sec
+head epoch 2 - batch 4100 / 5596 - avg loss: 0.6284 - elapsed: 1097.3 sec
+head epoch 2 - batch 4200 / 5596 - avg loss: 0.6283 - elapsed: 1124.0 sec
+head epoch 2 - batch 4300 / 5596 - avg loss: 0.6285 - elapsed: 1150.7 sec
+head epoch 2 - batch 4400 / 5596 - avg loss: 0.6286 - elapsed: 1177.4 sec
+head epoch 2 - batch 4500 / 5596 - avg loss: 0.6284 - elapsed: 1204.1 sec
+head epoch 2 - batch 4600 / 5596 - avg loss: 0.6287 - elapsed: 1230.9 sec
+head epoch 2 - batch 4700 / 5596 - avg loss: 0.6288 - elapsed: 1257.7 sec
+head epoch 2 - batch 4800 / 5596 - avg loss: 0.6288 - elapsed: 1284.5 sec
+head epoch 2 - batch 4900 / 5596 - avg loss: 0.6294 - elapsed: 1311.2 sec
+head epoch 2 - batch 5000 / 5596 - avg loss: 0.6294 - elapsed: 1338.2 sec
+head epoch 2 - batch 5100 / 5596 - avg loss: 0.6291 - elapsed: 1364.9 sec
+head epoch 2 - batch 5200 / 5596 - avg loss: 0.6292 - elapsed: 1391.9 sec
+head epoch 2 - batch 5300 / 5596 - avg loss: 0.6295 - elapsed: 1419.0 sec
+head epoch 2 - batch 5400 / 5596 - avg loss: 0.6294 - elapsed: 1446.0 sec
+head epoch 2 - batch 5500 / 5596 - avg loss: 0.6295 - elapsed: 1472.7 sec
+Finished head epoch 2 - final avg loss: 0.6296
+Starting evaluation for head epoch 2 ...
+head epoch 2 eval batch 100 / 1413
+head epoch 2 eval batch 200 / 1413
+head epoch 2 eval batch 300 / 1413
+head epoch 2 eval batch 400 / 1413
+head epoch 2 eval batch 500 / 1413
+head epoch 2 eval batch 600 / 1413
+head epoch 2 eval batch 700 / 1413
+head epoch 2 eval batch 800 / 1413
+head epoch 2 eval batch 900 / 1413
+head epoch 2 eval batch 1000 / 1413
+head epoch 2 eval batch 1100 / 1413
+head epoch 2 eval batch 1200 / 1413
+head epoch 2 eval batch 1300 / 1413
+head epoch 2 eval batch 1400 / 1413
+Finished evaluation for head epoch 2 - accuracy: 0.6652 - auroc: 0.7148
+head epoch: 2
+train loss: 0.6295645208627044
+val accuracy: 0.6651617757712566
+val auroc: 0.714820791361391
+
+Saved history to training_outputs/history.csv
+Saved latest checkpoint to training_outputs/checkpoint_latest.pth
+Saved epoch model to training_outputs/epoch_models/head_epoch_2_auroc_0_7148.pth
+Starting head epoch 3
+head epoch 3 - batch 100 / 5596 - avg loss: 0.6333 - elapsed: 26.7 sec
+head epoch 3 - batch 200 / 5596 - avg loss: 0.6283 - elapsed: 53.3 sec
+head epoch 3 - batch 300 / 5596 - avg loss: 0.6286 - elapsed: 79.9 sec
+head epoch 3 - batch 400 / 5596 - avg loss: 0.6285 - elapsed: 106.5 sec
+head epoch 3 - batch 500 / 5596 - avg loss: 0.6267 - elapsed: 133.1 sec
+head epoch 3 - batch 600 / 5596 - avg loss: 0.6271 - elapsed: 159.6 sec
+head epoch 3 - batch 700 / 5596 - avg loss: 0.6259 - elapsed: 186.3 sec
+head epoch 3 - batch 800 / 5596 - avg loss: 0.6239 - elapsed: 212.9 sec
+head epoch 3 - batch 900 / 5596 - avg loss: 0.6273 - elapsed: 239.6 sec
+head epoch 3 - batch 1000 / 5596 - avg loss: 0.626 - elapsed: 266.4 sec
+head epoch 3 - batch 1100 / 5596 - avg loss: 0.6275 - elapsed: 293.2 sec
+head epoch 3 - batch 1200 / 5596 - avg loss: 0.6283 - elapsed: 319.9 sec
+head epoch 3 - batch 1300 / 5596 - avg loss: 0.6288 - elapsed: 346.6 sec
+head epoch 3 - batch 1400 / 5596 - avg loss: 0.6288 - elapsed: 373.3 sec
+head epoch 3 - batch 1500 / 5596 - avg loss: 0.6293 - elapsed: 400.1 sec
+head epoch 3 - batch 1600 / 5596 - avg loss: 0.6289 - elapsed: 426.8 sec
+head epoch 3 - batch 1700 / 5596 - avg loss: 0.6285 - elapsed: 453.6 sec
+head epoch 3 - batch 1800 / 5596 - avg loss: 0.6286 - elapsed: 480.7 sec
+head epoch 3 - batch 1900 / 5596 - avg loss: 0.6287 - elapsed: 508.0 sec
+head epoch 3 - batch 2000 / 5596 - avg loss: 0.6283 - elapsed: 535.1 sec
+head epoch 3 - batch 2100 / 5596 - avg loss: 0.628 - elapsed: 561.8 sec
+head epoch 3 - batch 2200 / 5596 - avg loss: 0.628 - elapsed: 588.6 sec
+head epoch 3 - batch 2300 / 5596 - avg loss: 0.6282 - elapsed: 615.3 sec
+head epoch 3 - batch 2400 / 5596 - avg loss: 0.6283 - elapsed: 642.1 sec
+head epoch 3 - batch 2500 / 5596 - avg loss: 0.6283 - elapsed: 668.9 sec
+head epoch 3 - batch 2600 / 5596 - avg loss: 0.628 - elapsed: 695.7 sec
+head epoch 3 - batch 2700 / 5596 - avg loss: 0.6282 - elapsed: 722.4 sec
+head epoch 3 - batch 2800 / 5596 - avg loss: 0.6281 - elapsed: 749.2 sec
+head epoch 3 - batch 2900 / 5596 - avg loss: 0.6283 - elapsed: 776.0 sec
+head epoch 3 - batch 3000 / 5596 - avg loss: 0.6286 - elapsed: 802.8 sec
+head epoch 3 - batch 3100 / 5596 - avg loss: 0.6297 - elapsed: 829.7 sec
+head epoch 3 - batch 3200 / 5596 - avg loss: 0.6297 - elapsed: 856.5 sec
+head epoch 3 - batch 3300 / 5596 - avg loss: 0.6298 - elapsed: 883.5 sec
+head epoch 3 - batch 3400 / 5596 - avg loss: 0.6296 - elapsed: 910.5 sec
+head epoch 3 - batch 3500 / 5596 - avg loss: 0.6287 - elapsed: 937.5 sec
+head epoch 3 - batch 3600 / 5596 - avg loss: 0.6288 - elapsed: 964.4 sec
+head epoch 3 - batch 3700 / 5596 - avg loss: 0.6294 - elapsed: 991.7 sec
+head epoch 3 - batch 3800 / 5596 - avg loss: 0.6293 - elapsed: 1019.0 sec
+head epoch 3 - batch 3900 / 5596 - avg loss: 0.6291 - elapsed: 1045.8 sec
+head epoch 3 - batch 4000 / 5596 - avg loss: 0.6291 - elapsed: 1073.0 sec
+head epoch 3 - batch 4100 / 5596 - avg loss: 0.6291 - elapsed: 1100.1 sec
+head epoch 3 - batch 4200 / 5596 - avg loss: 0.629 - elapsed: 1127.0 sec
+head epoch 3 - batch 4300 / 5596 - avg loss: 0.6292 - elapsed: 1153.9 sec
+head epoch 3 - batch 4400 / 5596 - avg loss: 0.6291 - elapsed: 1180.6 sec
+head epoch 3 - batch 4500 / 5596 - avg loss: 0.629 - elapsed: 1207.2 sec
+head epoch 3 - batch 4600 / 5596 - avg loss: 0.6294 - elapsed: 1233.9 sec
+head epoch 3 - batch 4700 / 5596 - avg loss: 0.6293 - elapsed: 1260.6 sec
+head epoch 3 - batch 4800 / 5596 - avg loss: 0.629 - elapsed: 1287.4 sec
+head epoch 3 - batch 4900 / 5596 - avg loss: 0.629 - elapsed: 1314.4 sec
+head epoch 3 - batch 5000 / 5596 - avg loss: 0.6294 - elapsed: 1341.7 sec
+head epoch 3 - batch 5100 / 5596 - avg loss: 0.6296 - elapsed: 1368.8 sec
+head epoch 3 - batch 5200 / 5596 - avg loss: 0.6299 - elapsed: 1396.0 sec
+head epoch 3 - batch 5300 / 5596 - avg loss: 0.6301 - elapsed: 1422.8 sec
+head epoch 3 - batch 5400 / 5596 - avg loss: 0.6301 - elapsed: 1449.8 sec
+head epoch 3 - batch 5500 / 5596 - avg loss: 0.6302 - elapsed: 1477.2 sec
+Finished head epoch 3 - final avg loss: 0.6308
+Starting evaluation for head epoch 3 ...
+head epoch 3 eval batch 100 / 1413
+head epoch 3 eval batch 200 / 1413
+head epoch 3 eval batch 300 / 1413
+head epoch 3 eval batch 400 / 1413
+head epoch 3 eval batch 500 / 1413
+head epoch 3 eval batch 600 / 1413
+head epoch 3 eval batch 700 / 1413
+head epoch 3 eval batch 800 / 1413
+head epoch 3 eval batch 900 / 1413
+head epoch 3 eval batch 1000 / 1413
+head epoch 3 eval batch 1100 / 1413
+head epoch 3 eval batch 1200 / 1413
+head epoch 3 eval batch 1300 / 1413
+head epoch 3 eval batch 1400 / 1413
+Finished evaluation for head epoch 3 - accuracy: 0.609 - auroc: 0.7181
+head epoch: 3
+train loss: 0.6307695771769117
+val accuracy: 0.6090381976718453
+val auroc: 0.7180737273762335
+
+Saved history to training_outputs/history.csv
+Saved latest checkpoint to training_outputs/checkpoint_latest.pth
+Saved epoch model to training_outputs/epoch_models/head_epoch_3_auroc_0_7181.pth
+Saved best model to training_outputs/best_model.pth
+Saved latest checkpoint to training_outputs/checkpoint_latest.pth
+Unfreezing backbone...
+Backbone unfrozen.
+Finetune optimizer ready.
+Starting finetune epoch 1
+finetune epoch 1 - batch 100 / 5596 - avg loss: 0.6378 - elapsed: 44.0 sec
+finetune epoch 1 - batch 200 / 5596 - avg loss: 0.6274 - elapsed: 83.8 sec
+finetune epoch 1 - batch 300 / 5596 - avg loss: 0.634 - elapsed: 123.6 sec
+finetune epoch 1 - batch 400 / 5596 - avg loss: 0.6336 - elapsed: 163.3 sec
+finetune epoch 1 - batch 500 / 5596 - avg loss: 0.6327 - elapsed: 203.0 sec
+finetune epoch 1 - batch 600 / 5596 - avg loss: 0.6324 - elapsed: 242.7 sec
+finetune epoch 1 - batch 700 / 5596 - avg loss: 0.632 - elapsed: 282.5 sec
+finetune epoch 1 - batch 800 / 5596 - avg loss: 0.6289 - elapsed: 322.2 sec
+finetune epoch 1 - batch 900 / 5596 - avg loss: 0.6283 - elapsed: 362.0 sec
+finetune epoch 1 - batch 1000 / 5596 - avg loss: 0.6258 - elapsed: 402.1 sec
+finetune epoch 1 - batch 1100 / 5596 - avg loss: 0.6229 - elapsed: 441.8 sec
+finetune epoch 1 - batch 1200 / 5596 - avg loss: 0.6204 - elapsed: 481.6 sec
+finetune epoch 1 - batch 1300 / 5596 - avg loss: 0.6192 - elapsed: 521.3 sec
+finetune epoch 1 - batch 1400 / 5596 - avg loss: 0.6188 - elapsed: 561.0 sec
+finetune epoch 1 - batch 1500 / 5596 - avg loss: 0.6181 - elapsed: 600.6 sec
+finetune epoch 1 - batch 1600 / 5596 - avg loss: 0.6175 - elapsed: 640.4 sec
+finetune epoch 1 - batch 1700 / 5596 - avg loss: 0.6174 - elapsed: 680.1 sec
+finetune epoch 1 - batch 1800 / 5596 - avg loss: 0.617 - elapsed: 720.0 sec
+finetune epoch 1 - batch 1900 / 5596 - avg loss: 0.6153 - elapsed: 759.6 sec
+finetune epoch 1 - batch 2000 / 5596 - avg loss: 0.6151 - elapsed: 799.3 sec
+finetune epoch 1 - batch 2100 / 5596 - avg loss: 0.6151 - elapsed: 839.0 sec
+finetune epoch 1 - batch 2200 / 5596 - avg loss: 0.6146 - elapsed: 878.7 sec
+finetune epoch 1 - batch 2300 / 5596 - avg loss: 0.6135 - elapsed: 918.5 sec
+finetune epoch 1 - batch 2400 / 5596 - avg loss: 0.6131 - elapsed: 958.2 sec
+finetune epoch 1 - batch 2500 / 5596 - avg loss: 0.6126 - elapsed: 997.9 sec
+finetune epoch 1 - batch 2600 / 5596 - avg loss: 0.6122 - elapsed: 1037.6 sec
+finetune epoch 1 - batch 2700 / 5596 - avg loss: 0.6119 - elapsed: 1077.3 sec
+finetune epoch 1 - batch 2800 / 5596 - avg loss: 0.6111 - elapsed: 1117.0 sec
+finetune epoch 1 - batch 2900 / 5596 - avg loss: 0.6112 - elapsed: 1156.8 sec
+finetune epoch 1 - batch 3000 / 5596 - avg loss: 0.6111 - elapsed: 1196.5 sec
+finetune epoch 1 - batch 3100 / 5596 - avg loss: 0.6101 - elapsed: 1236.2 sec
+finetune epoch 1 - batch 3200 / 5596 - avg loss: 0.61 - elapsed: 1276.0 sec
+finetune epoch 1 - batch 3300 / 5596 - avg loss: 0.6093 - elapsed: 1315.7 sec
+finetune epoch 1 - batch 3400 / 5596 - avg loss: 0.6088 - elapsed: 1355.4 sec
+finetune epoch 1 - batch 3500 / 5596 - avg loss: 0.6086 - elapsed: 1395.1 sec
+finetune epoch 1 - batch 3600 / 5596 - avg loss: 0.608 - elapsed: 1434.7 sec
+finetune epoch 1 - batch 3700 / 5596 - avg loss: 0.6078 - elapsed: 1474.5 sec
+finetune epoch 1 - batch 3800 / 5596 - avg loss: 0.6077 - elapsed: 1514.2 sec
+finetune epoch 1 - batch 3900 / 5596 - avg loss: 0.6074 - elapsed: 1553.9 sec
+finetune epoch 1 - batch 4000 / 5596 - avg loss: 0.6071 - elapsed: 1593.8 sec
+finetune epoch 1 - batch 4100 / 5596 - avg loss: 0.6066 - elapsed: 1633.5 sec
+finetune epoch 1 - batch 4200 / 5596 - avg loss: 0.6066 - elapsed: 1673.2 sec
+finetune epoch 1 - batch 4300 / 5596 - avg loss: 0.606 - elapsed: 1712.9 sec
+finetune epoch 1 - batch 4400 / 5596 - avg loss: 0.6054 - elapsed: 1752.6 sec
+finetune epoch 1 - batch 4500 / 5596 - avg loss: 0.6052 - elapsed: 1792.3 sec
+finetune epoch 1 - batch 4600 / 5596 - avg loss: 0.6049 - elapsed: 1831.9 sec
+finetune epoch 1 - batch 4700 / 5596 - avg loss: 0.6045 - elapsed: 1871.7 sec
+finetune epoch 1 - batch 4800 / 5596 - avg loss: 0.6037 - elapsed: 1911.4 sec
+finetune epoch 1 - batch 4900 / 5596 - avg loss: 0.6038 - elapsed: 1951.0 sec
+finetune epoch 1 - batch 5000 / 5596 - avg loss: 0.6036 - elapsed: 1990.7 sec
+finetune epoch 1 - batch 5100 / 5596 - avg loss: 0.6034 - elapsed: 2030.5 sec
+finetune epoch 1 - batch 5200 / 5596 - avg loss: 0.6031 - elapsed: 2070.3 sec
+finetune epoch 1 - batch 5300 / 5596 - avg loss: 0.6028 - elapsed: 2109.9 sec
+finetune epoch 1 - batch 5400 / 5596 - avg loss: 0.6026 - elapsed: 2149.5 sec
+finetune epoch 1 - batch 5500 / 5596 - avg loss: 0.6025 - elapsed: 2189.3 sec
+Finished finetune epoch 1 - final avg loss: 0.6026
+Starting evaluation for finetune epoch 1 ...
+finetune epoch 1 eval batch 100 / 1413
+finetune epoch 1 eval batch 200 / 1413
+finetune epoch 1 eval batch 300 / 1413
+finetune epoch 1 eval batch 400 / 1413
+finetune epoch 1 eval batch 500 / 1413
+finetune epoch 1 eval batch 600 / 1413
+finetune epoch 1 eval batch 700 / 1413
+finetune epoch 1 eval batch 800 / 1413
+finetune epoch 1 eval batch 900 / 1413
+finetune epoch 1 eval batch 1000 / 1413
+finetune epoch 1 eval batch 1100 / 1413
+finetune epoch 1 eval batch 1200 / 1413
+finetune epoch 1 eval batch 1300 / 1413
+finetune epoch 1 eval batch 1400 / 1413
+Finished evaluation for finetune epoch 1 - accuracy: 0.7 - auroc: 0.7584
+finetune epoch: 1
+train loss: 0.6026063593752798
+val accuracy: 0.7000398353472315
+val auroc: 0.7583879420929754
+
+Saved history to training_outputs/history.csv
+Saved latest checkpoint to training_outputs/checkpoint_latest.pth
+Saved epoch model to training_outputs/epoch_models/finetune_epoch_1_auroc_0_7584.pth
+Saved best model to training_outputs/best_model.pth
+Saved latest checkpoint to training_outputs/checkpoint_latest.pth
+Starting finetune epoch 2
+finetune epoch 2 - batch 100 / 5596 - avg loss: 0.5694 - elapsed: 39.8 sec
+finetune epoch 2 - batch 200 / 5596 - avg loss: 0.5796 - elapsed: 79.7 sec
+finetune epoch 2 - batch 300 / 5596 - avg loss: 0.5783 - elapsed: 119.5 sec
+finetune epoch 2 - batch 400 / 5596 - avg loss: 0.5767 - elapsed: 159.2 sec
+finetune epoch 2 - batch 500 / 5596 - avg loss: 0.5768 - elapsed: 199.0 sec
+finetune epoch 2 - batch 600 / 5596 - avg loss: 0.5824 - elapsed: 238.8 sec
+finetune epoch 2 - batch 700 / 5596 - avg loss: 0.5826 - elapsed: 278.5 sec
+finetune epoch 2 - batch 800 / 5596 - avg loss: 0.583 - elapsed: 318.3 sec
+finetune epoch 2 - batch 900 / 5596 - avg loss: 0.5827 - elapsed: 358.0 sec
+finetune epoch 2 - batch 1000 / 5596 - avg loss: 0.5823 - elapsed: 398.0 sec
+finetune epoch 2 - batch 1100 / 5596 - avg loss: 0.5823 - elapsed: 437.8 sec
+finetune epoch 2 - batch 1200 / 5596 - avg loss: 0.5821 - elapsed: 477.7 sec
+finetune epoch 2 - batch 1300 / 5596 - avg loss: 0.5821 - elapsed: 517.5 sec
+finetune epoch 2 - batch 1400 / 5596 - avg loss: 0.5831 - elapsed: 557.4 sec
+finetune epoch 2 - batch 1500 / 5596 - avg loss: 0.5823 - elapsed: 597.2 sec
+finetune epoch 2 - batch 1600 / 5596 - avg loss: 0.5846 - elapsed: 637.6 sec
+finetune epoch 2 - batch 1700 / 5596 - avg loss: 0.585 - elapsed: 677.4 sec
+finetune epoch 2 - batch 1800 / 5596 - avg loss: 0.5848 - elapsed: 717.2 sec
+finetune epoch 2 - batch 1900 / 5596 - avg loss: 0.5847 - elapsed: 757.0 sec
+finetune epoch 2 - batch 2000 / 5596 - avg loss: 0.5862 - elapsed: 796.7 sec
+^[finetune epoch 2 - batch 2100 / 5596 - avg loss: 0.5851 - elapsed: 836.6 sec
+finetune epoch 2 - batch 2200 / 5596 - avg loss: 0.5853 - elapsed: 876.4 sec
+finetune epoch 2 - batch 2300 / 5596 - avg loss: 0.5852 - elapsed: 916.2 sec
+finetune epoch 2 - batch 2400 / 5596 - avg loss: 0.585 - elapsed: 956.0 sec
+finetune epoch 2 - batch 2500 / 5596 - avg loss: 0.584 - elapsed: 995.8 sec
+finetune epoch 2 - batch 2600 / 5596 - avg loss: 0.5845 - elapsed: 1035.5 sec
+finetune epoch 2 - batch 2700 / 5596 - avg loss: 0.5848 - elapsed: 1075.2 sec
+finetune epoch 2 - batch 2800 / 5596 - avg loss: 0.5852 - elapsed: 1115.0 sec
+finetune epoch 2 - batch 2900 / 5596 - avg loss: 0.5852 - elapsed: 1154.8 sec
+finetune epoch 2 - batch 3000 / 5596 - avg loss: 0.5847 - elapsed: 1194.5 sec
+finetune epoch 2 - batch 3100 / 5596 - avg loss: 0.5846 - elapsed: 1234.4 sec
+finetune epoch 2 - batch 3200 / 5596 - avg loss: 0.5844 - elapsed: 1274.2 sec
+finetune epoch 2 - batch 3300 / 5596 - avg loss: 0.584 - elapsed: 1314.0 sec
+finetune epoch 2 - batch 3400 / 5596 - avg loss: 0.5838 - elapsed: 1354.4 sec
+finetune epoch 2 - batch 3500 / 5596 - avg loss: 0.5841 - elapsed: 1394.3 sec
+finetune epoch 2 - batch 3600 / 5596 - avg loss: 0.5841 - elapsed: 1434.1 sec
+finetune epoch 2 - batch 3700 / 5596 - avg loss: 0.5842 - elapsed: 1473.8 sec
+finetune epoch 2 - batch 3800 / 5596 - avg loss: 0.584 - elapsed: 1513.6 sec
+finetune epoch 2 - batch 3900 / 5596 - avg loss: 0.5843 - elapsed: 1553.4 sec
+finetune epoch 2 - batch 4000 / 5596 - avg loss: 0.5841 - elapsed: 1593.0 sec
+finetune epoch 2 - batch 4100 / 5596 - avg loss: 0.5839 - elapsed: 1632.7 sec
+finetune epoch 2 - batch 4200 / 5596 - avg loss: 0.5839 - elapsed: 1672.3 sec
+finetune epoch 2 - batch 4300 / 5596 - avg loss: 0.5833 - elapsed: 1711.9 sec
+finetune epoch 2 - batch 4400 / 5596 - avg loss: 0.5836 - elapsed: 1751.6 sec
+finetune epoch 2 - batch 4500 / 5596 - avg loss: 0.5834 - elapsed: 1791.3 sec
+finetune epoch 2 - batch 4600 / 5596 - avg loss: 0.5833 - elapsed: 1831.1 sec
+finetune epoch 2 - batch 4700 / 5596 - avg loss: 0.5832 - elapsed: 1870.8 sec
+finetune epoch 2 - batch 4800 / 5596 - avg loss: 0.5829 - elapsed: 1910.6 sec
+finetune epoch 2 - batch 4900 / 5596 - avg loss: 0.5824 - elapsed: 1950.4 sec
+finetune epoch 2 - batch 5000 / 5596 - avg loss: 0.5827 - elapsed: 1990.4 sec
+finetune epoch 2 - batch 5100 / 5596 - avg loss: 0.5824 - elapsed: 2030.3 sec
+finetune epoch 2 - batch 5200 / 5596 - avg loss: 0.5826 - elapsed: 2070.0 sec
+finetune epoch 2 - batch 5300 / 5596 - avg loss: 0.5823 - elapsed: 2109.6 sec
+finetune epoch 2 - batch 5400 / 5596 - avg loss: 0.5824 - elapsed: 2149.3 sec
+finetune epoch 2 - batch 5500 / 5596 - avg loss: 0.5826 - elapsed: 2189.0 sec
+Finished finetune epoch 2 - final avg loss: 0.5829
+Starting evaluation for finetune epoch 2 ...
+finetune epoch 2 eval batch 100 / 1413
+finetune epoch 2 eval batch 200 / 1413
+finetune epoch 2 eval batch 300 / 1413
+finetune epoch 2 eval batch 400 / 1413
+finetune epoch 2 eval batch 500 / 1413
+finetune epoch 2 eval batch 600 / 1413
+finetune epoch 2 eval batch 700 / 1413
+finetune epoch 2 eval batch 800 / 1413
+finetune epoch 2 eval batch 900 / 1413
+finetune epoch 2 eval batch 1000 / 1413
+finetune epoch 2 eval batch 1100 / 1413
+finetune epoch 2 eval batch 1200 / 1413
+finetune epoch 2 eval batch 1300 / 1413
+finetune epoch 2 eval batch 1400 / 1413
+Finished evaluation for finetune epoch 2 - accuracy: 0.704 - auroc: 0.7601
+finetune epoch: 2
+train loss: 0.58287445466883
+val accuracy: 0.7039791085734519
+val auroc: 0.7601456768889576
+
+Saved history to training_outputs/history.csv
+Saved latest checkpoint to training_outputs/checkpoint_latest.pth
+Saved epoch model to training_outputs/epoch_models/finetune_epoch_2_auroc_0_7601.pth
+Saved best model to training_outputs/best_model.pth
+Saved latest checkpoint to training_outputs/checkpoint_latest.pth
+Starting finetune epoch 3
+finetune epoch 3 - batch 100 / 5596 - avg loss: 0.5702 - elapsed: 39.8 sec
+finetune epoch 3 - batch 200 / 5596 - avg loss: 0.5782 - elapsed: 79.5 sec
+finetune epoch 3 - batch 300 / 5596 - avg loss: 0.5768 - elapsed: 119.3 sec
+finetune epoch 3 - batch 400 / 5596 - avg loss: 0.5701 - elapsed: 159.0 sec
+finetune epoch 3 - batch 500 / 5596 - avg loss: 0.5717 - elapsed: 198.8 sec
+finetune epoch 3 - batch 600 / 5596 - avg loss: 0.5721 - elapsed: 238.4 sec
+finetune epoch 3 - batch 700 / 5596 - avg loss: 0.5737 - elapsed: 278.2 sec
+finetune epoch 3 - batch 800 / 5596 - avg loss: 0.5742 - elapsed: 317.9 sec
+finetune epoch 3 - batch 900 / 5596 - avg loss: 0.574 - elapsed: 357.7 sec
+finetune epoch 3 - batch 1000 / 5596 - avg loss: 0.5753 - elapsed: 397.4 sec
+finetune epoch 3 - batch 1100 / 5596 - avg loss: 0.5756 - elapsed: 437.2 sec
+finetune epoch 3 - batch 1200 / 5596 - avg loss: 0.5736 - elapsed: 476.9 sec
+finetune epoch 3 - batch 1300 / 5596 - avg loss: 0.5713 - elapsed: 516.9 sec
+finetune epoch 3 - batch 1400 / 5596 - avg loss: 0.5713 - elapsed: 556.6 sec
+finetune epoch 3 - batch 1500 / 5596 - avg loss: 0.5722 - elapsed: 596.3 sec
+finetune epoch 3 - batch 1600 / 5596 - avg loss: 0.5722 - elapsed: 636.1 sec
+finetune epoch 3 - batch 1700 / 5596 - avg loss: 0.5723 - elapsed: 676.0 sec
+finetune epoch 3 - batch 1800 / 5596 - avg loss: 0.5725 - elapsed: 715.7 sec
+finetune epoch 3 - batch 1900 / 5596 - avg loss: 0.5734 - elapsed: 755.5 sec
+finetune epoch 3 - batch 2000 / 5596 - avg loss: 0.5744 - elapsed: 795.2 sec
+finetune epoch 3 - batch 2100 / 5596 - avg loss: 0.5742 - elapsed: 835.0 sec
+finetune epoch 3 - batch 2200 / 5596 - avg loss: 0.5739 - elapsed: 874.7 sec
+finetune epoch 3 - batch 2300 / 5596 - avg loss: 0.5736 - elapsed: 914.5 sec
+finetune epoch 3 - batch 2400 / 5596 - avg loss: 0.5734 - elapsed: 954.3 sec
+finetune epoch 3 - batch 2500 / 5596 - avg loss: 0.5735 - elapsed: 994.0 sec
+finetune epoch 3 - batch 2600 / 5596 - avg loss: 0.5743 - elapsed: 1033.9 sec
+finetune epoch 3 - batch 2700 / 5596 - avg loss: 0.5747 - elapsed: 1073.6 sec
+finetune epoch 3 - batch 2800 / 5596 - avg loss: 0.5746 - elapsed: 1113.3 sec
+finetune epoch 3 - batch 2900 / 5596 - avg loss: 0.5742 - elapsed: 1153.1 sec
+finetune epoch 3 - batch 3000 / 5596 - avg loss: 0.574 - elapsed: 1192.8 sec
+finetune epoch 3 - batch 3100 / 5596 - avg loss: 0.5744 - elapsed: 1232.5 sec
+finetune epoch 3 - batch 3200 / 5596 - avg loss: 0.5744 - elapsed: 1272.3 sec
+finetune epoch 3 - batch 3300 / 5596 - avg loss: 0.5745 - elapsed: 1312.0 sec
+finetune epoch 3 - batch 3400 / 5596 - avg loss: 0.5749 - elapsed: 1351.7 sec
+finetune epoch 3 - batch 3500 / 5596 - avg loss: 0.5747 - elapsed: 1391.5 sec
+finetune epoch 3 - batch 3600 / 5596 - avg loss: 0.5748 - elapsed: 1431.2 sec
+finetune epoch 3 - batch 3700 / 5596 - avg loss: 0.5745 - elapsed: 1471.0 sec
+finetune epoch 3 - batch 3800 / 5596 - avg loss: 0.5747 - elapsed: 1510.8 sec
+finetune epoch 3 - batch 3900 / 5596 - avg loss: 0.5748 - elapsed: 1550.6 sec
+finetune epoch 3 - batch 4000 / 5596 - avg loss: 0.5745 - elapsed: 1590.4 sec
+finetune epoch 3 - batch 4100 / 5596 - avg loss: 0.5743 - elapsed: 1630.2 sec
+finetune epoch 3 - batch 4200 / 5596 - avg loss: 0.5738 - elapsed: 1670.1 sec
+finetune epoch 3 - batch 4300 / 5596 - avg loss: 0.5739 - elapsed: 1709.9 sec
+finetune epoch 3 - batch 4400 / 5596 - avg loss: 0.5739 - elapsed: 1749.7 sec
+finetune epoch 3 - batch 4500 / 5596 - avg loss: 0.5738 - elapsed: 1789.4 sec
+finetune epoch 3 - batch 4600 / 5596 - avg loss: 0.5734 - elapsed: 1829.1 sec
+finetune epoch 3 - batch 4700 / 5596 - avg loss: 0.5732 - elapsed: 1868.8 sec
+finetune epoch 3 - batch 4800 / 5596 - avg loss: 0.5733 - elapsed: 1908.5 sec
+finetune epoch 3 - batch 4900 / 5596 - avg loss: 0.5727 - elapsed: 1948.2 sec
+finetune epoch 3 - batch 5000 / 5596 - avg loss: 0.5729 - elapsed: 1988.1 sec
+finetune epoch 3 - batch 5100 / 5596 - avg loss: 0.573 - elapsed: 2027.8 sec
+finetune epoch 3 - batch 5200 / 5596 - avg loss: 0.573 - elapsed: 2067.5 sec
+finetune epoch 3 - batch 5300 / 5596 - avg loss: 0.5731 - elapsed: 2107.2 sec
+finetune epoch 3 - batch 5400 / 5596 - avg loss: 0.5731 - elapsed: 2146.9 sec
+finetune epoch 3 - batch 5500 / 5596 - avg loss: 0.5731 - elapsed: 2186.7 sec
+Finished finetune epoch 3 - final avg loss: 0.5733
+Starting evaluation for finetune epoch 3 ...
+finetune epoch 3 eval batch 100 / 1413
+finetune epoch 3 eval batch 200 / 1413
+finetune epoch 3 eval batch 300 / 1413
+finetune epoch 3 eval batch 400 / 1413
+finetune epoch 3 eval batch 500 / 1413
+finetune epoch 3 eval batch 600 / 1413
+finetune epoch 3 eval batch 700 / 1413
+finetune epoch 3 eval batch 800 / 1413
+finetune epoch 3 eval batch 900 / 1413
+finetune epoch 3 eval batch 1000 / 1413
+finetune epoch 3 eval batch 1100 / 1413
+finetune epoch 3 eval batch 1200 / 1413
+finetune epoch 3 eval batch 1300 / 1413
+finetune epoch 3 eval batch 1400 / 1413
+Finished evaluation for finetune epoch 3 - accuracy: 0.7092 - auroc: 0.7679
+finetune epoch: 3
+train loss: 0.5733267193089469
+val accuracy: 0.7092019652104634
+val auroc: 0.7678556301732148
+
+Saved history to training_outputs/history.csv
+Saved latest checkpoint to training_outputs/checkpoint_latest.pth
+Saved epoch model to training_outputs/epoch_models/finetune_epoch_3_auroc_0_7679.pth
+Saved best model to training_outputs/best_model.pth
+Saved latest checkpoint to training_outputs/checkpoint_latest.pth
+Saved final model to training_outputs/final_model.pth
+Saved latest checkpoint to training_outputs/checkpoint_latest.pth
+Saved history to training_outputs/history.csv
+Training complete.
+Best validation AUROC: 0.7678556301732148
+Latest checkpoint: training_outputs/checkpoint_latest.pth
+Best model: training_outputs/best_model.pth
+Final model: training_outputs/final_model.pth
+(MLPython) Annmarie@MacBookPro cv_final_code % -

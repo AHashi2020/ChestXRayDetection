@@ -1,0 +1,36 @@
+{
+  "entropy_threshold": 0.3362904489040375,
+  "entropy_quantile": 0.15,
+  "tta_learning_rate": 1e-06,
+  "min_accepted_samples": 2,
+  "max_adapt_samples": 2,
+  "tta_group_names": [
+    "Atelectasis",
+    "Cardiomegaly",
+    "Pleural_Effusion",
+    "Consolidation",
+    "Edema",
+    "Emphysema",
+    "Fibrosis",
+    "Pleural_Thickening",
+    "Pneumothorax",
+    "Nodule_Mass",
+    "Infiltration"
+  ],
+  "thresholds_by_label": {
+    "Atelectasis": 0.72,
+    "Cardiomegaly": 0.93,
+    "Effusion": 0.73,
+    "Infiltration": 0.54,
+    "Mass": 0.8,
+    "Nodule": 0.81,
+    "Pneumonia": 0.87,
+    "Pneumothorax": 0.79,
+    "Consolidation": 0.72,
+    "Edema": 0.93,
+    "Emphysema": 0.94,
+    "Fibrosis": 0.93,
+    "Pleural_Thickening": 0.8,
+    "Hernia": 0.93
+  }
+}
