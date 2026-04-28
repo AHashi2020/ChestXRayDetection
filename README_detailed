@@ -2,9 +2,7 @@
 
 ## Overview
 
-This project studies chest X-ray classification under **domain shift**, where a model trained on one dataset can lose performance when evaluated on images from a different hospital system or imaging pipeline.
-
-The project is intentionally designed as a careful, student-scale experimental pipeline rather than a brand-new model architecture. The main workflow is:
+This project studies chest X-ray classification under **domain shift**, where a model trained on one dataset can lose performance when evaluated on images from a different hospital system or imaging pipeline. The main workflow is:
 
 - train on **NIH ChestXray14**
 - validate internally on NIH
@@ -13,17 +11,6 @@ The project is intentionally designed as a careful, student-scale experimental p
 - test **entropy-gated test-time adaptation (TTA)** as a lightweight robustness method
 
 The main goal is to measure how much performance changes under external shift and whether cautious deployment-time adaptation helps.
-
----
-
-## Main Research Questions
-
-This project asks:
-
-1. Can a chest X-ray model trained on NIH weak labels generalize to an external dataset?
-2. How much does performance drop when moving from NIH to VinDr-CXR?
-3. Does entropy-gated test-time adaptation improve robustness under domain shift?
-4. Does using a **smaller grouped label system** work better than the original 14-label setup for external evaluation and TTA?
 
 ---
 
@@ -39,8 +26,6 @@ Used for training and internal validation.
 ### 2. VinDr-CXR test set
 Used for external evaluation.
 
-Why it matters:
-- external to NIH
 - different clinical source
 - DICOM rather than PNG
 - better test of true cross-dataset robustness
@@ -58,8 +43,8 @@ Binary task:
 
 This is the simplest setup and serves as the main baseline for source-vs-external generalization.
 
-## 2. Original 14-label multi-label setup
-The original NIH multi-label pipeline predicts these labels:
+## 2. 14-label setup
+The NIH multi-label pipeline predicts these labels:
 
 - Atelectasis
 - Cardiomegaly
@@ -112,7 +97,7 @@ This grouped system is meant to:
 - reduce rare-label instability
 - improve class frequency
 - create cleaner external overlap with VinDr
-- make TTA more stable than the original 14-label setup
+- make TTA more stable than 14-label setup
 
 ---
 
@@ -123,7 +108,6 @@ This grouped system is meant to:
 ### `prepareNIH.py`
 Builds the binary NIH train/validation split.
 
-What it does:
 - reads `NIH/Data_Entry_2017.csv`
 - finds image files
 - creates binary labels
@@ -161,7 +145,7 @@ What it does:
 
 ---
 
-## Original 14-label NIH multi-label pipeline
+##  14-label NIH pipeline
 
 ### `prepareNIH_labels.py`
 Builds the NIH 14-label train/validation split.
@@ -380,49 +364,4 @@ What it does:
 
 This grouped-label pipeline is the next experiment designed to test whether a simpler, more stable label space performs better externally and under TTA than the full 14-label formulation.
 
----
 
-## Why External Evaluation Matters
-
-Internal NIH validation alone does not fully test robustness.
-
-A model can perform well on NIH and still degrade when moved to a different dataset. VinDr-CXR matters because it is:
-- external to NIH
-- DICOM-based
-- from a different clinical source
-
-That makes it a much stronger test of generalization.
-
----
-
-## Current Findings
-
-### Binary baseline
-Works reasonably well on external VinDr and provides the cleanest source-only baseline.
-
-### Binary TTA
-Mixed result:
-- higher recall
-- higher F1
-- lower precision
-- lower ranking metrics
-
-### 14-label multi-label baseline
-Useful for overlap-based external evaluation, but sparse labels and imperfect label matching make the task harder.
-
-### 14-label multi-label TTA
-Implemented correctly, but still not beneficial overall.
-
-### Grouped 5-label pipeline
-Added as the next-stage experiment to reduce sparsity, improve external overlap, and test whether grouped labels help both baseline performance and TTA.
-
----
-
-## How to Run
-
-## 1. Binary pipeline
-```bash
-python prepareNIH.py
-python trainNIH.py
-python test_vindr_binary.py
-python test_vindr_binary_tta.py
